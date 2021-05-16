@@ -1,0 +1,287 @@
+
+/* import variables */
+@import url(Partials/_variables.css)
+
+/* importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Pacifico&family=Righteous&family=Roboto:wght@300&display=swap');
+
+/* league font */
+@font-face {
+    font-family: friz;
+    src: url(Fonts/Friz\ Quadrata\ Bold.otf );
+ }
+
+/* scroll */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* gradient background */
+
+body {
+
+background: #D3CCE3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+
+
+/* Designing nav-bar */
+
+.navbar-brand {
+    padding: 0 .5rem 0 1rem;
+}
+
+.navbar .nav-item .nav-link  {
+    padding: .5rem 3rem;
+    font-family: var(--roboto);
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--title-color);   
+}
+
+.navbar .nav-item .nav-link:hover {
+    text-decoration: underline;
+    text-decoration-color: black;
+    text-decoration-thickness: 3px;
+}
+
+
+/* icon design */
+i {
+    margin-right: 10px ;
+}
+
+
+/* button besign */
+.btn {
+    margin: 0px 5px;
+    font-family: var(--roboto);
+    font-weight: 600;
+    color: black;
+    text-transform: uppercase;
+}
+
+/* dropdowns */
+
+.dropdown-menu {
+    background-color: #97EAD2;
+}
+
+.dropdown-item {
+    color: black;
+    font-family: roboto;
+    font-weight: 700;
+}
+
+.dropdown-item:hover {
+    background-color: black;
+    color: white;
+}
+
+/* hero section */
+
+header.video {
+    position: relative;
+    background-color: black;
+    height: 75vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+    position: relative;
+    z-index: 2;
+    font-family: friz;
+    text-transform: uppercase;
+    
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  
+  @media (pointer: coarse) and (hover: none) {
+    header {
+      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+    header video {
+      display: none;
+    }
+  }
+
+  /* video button */
+
+  button.hero {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px 32px;
+    font-family: var(--roboto); 
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 50px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s; 
+  }
+
+  button.hero:hover {
+    transform: translateY(-10px);
+  }
+
+/* designing card */
+
+.card {
+    margin: 20px 20px;   
+}
+
+.card> img {
+    height: 380px;
+}
+
+.card-button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    font-family: var(--roboto); 
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; 
+    transition-duration: 0.4s; 
+}
+
+.card-button:hover {
+    transform: translateX(-10px);
+}    
+
+
+/* carousel design for champions */
+
+.carousel {
+    margin: 15px 0px;
+}
+
+
+.carousel .carousel-inner .carousel-item h5{
+    color:white;
+    font-size: 60px;
+    font-family: friz;
+}
+
+.carousel .carousel-inner .carousel-item p{
+    color:white;
+    font-size: 20px;
+    font-family: friz;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+    outline: black;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+/* champs header */
+
+.champ-section {
+    margin: 30px;
+    color: #fff;
+  text-align: center;
+  letter-spacing: 5px;
+  text-shadow: 3px 3px 20px #1c1f1c,
+    -2px 1px 30px hsl(108, 88%, 62%);
+}
+
+
+ .champ{
+     font-family: friz;
+     font-size: 80px;
+     text-align: center;
+     animation-name: font;
+    animation-duration: 1s;
+}
+
+@keyframes font {
+    from {font-size: 60px;}
+    to {font-size: 80px;}
+     
+ }
+
+ h2 {
+    font-family: friz;
+    font-size: 30px;
+    text-align: center;  
+ }
+
+ /* Maps */
+
+ .map .map-section h2 {
+     display: flex;
+     justify-content: center;
+     align-content: center;
+     margin-top: 50px;
+ }
+
+ .map .map-section h6 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+ }
+
+ .map-button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 40px;
+ }
+ 
+ /* Second card */
+ 
+ .second-card-ection {
+     margin: 30px;
+ }
+
+ /* footer */
+
+ footer {
+     margin-top: 10px;
+ }
