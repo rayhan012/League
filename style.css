@@ -195,6 +195,13 @@ header.video {
     height: 380px;
 }
 
+
+@media only screen and (max-width: 700px) and (min-width: 300px) {
+
+    .card> img {
+        height: auto;
+}
+
 .card-button {
     background-color: #4CAF50; 
     border: none;
@@ -293,9 +300,13 @@ header.video {
  @media only screen and (max-width: 700px) and (min-width: 300px) {
 
     .champ {
-        font-size: 50px;
+        font-size: 30px;
     
         }
+    .champ-section>h2 {
+        font-size: 20px;
+    }    
+
        
        }
 
@@ -338,7 +349,7 @@ header.video {
     
         }
         .flex-container .map-text h6 {
-        margin: 20px 15px;
+        margin: 20px 8px;
     }  
     
     .flex-container {
